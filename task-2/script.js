@@ -79,7 +79,8 @@ let isPrime = true;
 
 if (num3 === 1) {
   isPrime = false;
-} else {
+}
+else {
   for (let i = 2; i <= Math.sqrt(num3); i++) {
     if (num3 % i === 0) {
       isPrime = false;
