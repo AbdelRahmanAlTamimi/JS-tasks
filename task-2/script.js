@@ -71,7 +71,7 @@
 
 // task 14
 do {
-    let num3 = Number(prompt("please enter a positive number "));
+    var num3 = Number(prompt("please enter a positive number "));
     
 } while (num3 < 0)
 let isprime = true;
