@@ -70,43 +70,28 @@
 //     console.log("Congratulations, you have a good GPA");
 
 // task 14
-let num3;
-do {
-  num3 = Number(prompt("please enter a positive number "));
-} while (num3 <= 0);
+// let num3;
+// do {
+//   num3 = Number(prompt("please enter a positive number "));
+// } while (num3 <= 0);
 
-let isPrime = true;
+// let isPrime = true;
 
-if (num3 === 1) {
-  isPrime = false;
-}
-else {
-  for (let i = 2; i <= Math.sqrt(num3); i++) {
-    if (num3 % i === 0) {
-      isPrime = false;
-      break;
-    }
-  }
-}
+// if (num3 === 1) {
+//   isPrime = false;
+// }
+// else {
+//   for (let i = 2; i <= Math.sqrt(num3); i++) {
+//     if (num3 % i === 0) {
+//       isPrime = false;
+//       break;
+//     }
+//   }
+// }
 
-console.log(isPrime);
+// console.log(isPrime);
 
-let theName = "  Ahmed  ";
 
-console.log(theName);
-console.log(theName[1]);
-console.log(theName[5]);
-
-console.log(theName.charAt(1));
-console.log(theName.charAt(5));
-
-console.log(theName.length);
-console.log(theName.trim());
-
-console.log(theName.toUpperCase());
-console.log(theName.toLowerCase());
-
-console.log(theName.trim().charAt(2).toUpperCase());
 
 
 
