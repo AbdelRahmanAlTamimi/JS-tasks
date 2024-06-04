@@ -70,7 +70,21 @@
 //     console.log("Congratulations, you have a good GPA");
 
 // task 14
+do {
+    let num3 = Number(prompt("please enter a positive number "));
+    
+} while (num3 < 0)
 
+i = 2;
+let isprime = true;
+for (i; i <= Math.round(num3 / 2); i++) {
+  if (num3 % i == 0) {
+    isprime = false;
+    break;
+  }
+}
+if (isprime && num3 != 1) console.log(true);
+else console.log(false);
 
 
 
