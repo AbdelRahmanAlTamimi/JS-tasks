@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Tasks</title>
+    
+    <style>
+        #hiddenElement,
+        #customMenu,
+        #tooltip {
+            display: none;
+        }
+
+        #customMenu {
+            position: absolute;
+            background: lightgray;
+            border: 1px solid gray;
+            padding: 10px;
+        }
+
+        #tooltip {
+            position: absolute;
+            background: yellow;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .highlight {
+            border: 10px solid red;
+        }
+
+        .toggled {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <button id="alertButton">Click Me</button> <br>
+
+    <br>
+    <button id="textChangeButton">Change Text</button> 
+    <p id="textChangeParagraph">Original Text</p>
+
+    
+    <div id="dblclickDiv" style="width: 100px; height: 100px; background: lightgray;">Double-click me</div> <br>
+
+
+    <div id="mouseenterDiv">Hover over me</div><br>
+
+
+    <br>
+    <form id="submitForm">
+        <input type="text" id="formInput" placeholder="Type something...">
+        <button type="submit">Submit</button>
+    </form> <br>
+
+    
+    <input type="text" id="focusInput" placeholder="Focus on me"> <br> <br>
+    
+
+    <input type="text" id="keyEventInput" placeholder="Type here...">
+    <br><br>
+    
+    <div id="toggleDiv">Click to toggle class</div> <br><br>
+
+    
+    <form id="validateForm">
+        <input type="text" id="nameInput" placeholder="Name" required>
+        <input type="email" id="emailInput" placeholder="Email" required>
+        <button type="submit">Submit</button>
+    </form> <br><br>
+
+    
+    <img id="changeImage" src="https://via.placeholder.com/150" alt="Placeholder">
+    <button id="changeImageButton">Change Image</button> <br><br><br>
+
+    <br><br>
+    <input type="password" id="passwordInput" placeholder="Password">
+    <label>
+        <input type="checkbox" id="togglePassword"> Show Password
+    </label> 
+    <br><br><br><br>
+
+    
+    <input type="color" id="colorPicker">
+    <div id="colorDiv" style="width: 100px; height: 100px; background: lightgray;">Pick a color</div>
+    <br><br><br>
+    
+    <div id="carousel">
+        <img id="carouselImage" src="https://via.placeholder.com/150" alt="Carousel">
+        <button id="prevButton">Previous</button>
+        <button id="nextButton">Next</button>
+    </div> <br><br><br>
+
+    
+    <button id="loadContentButton">Load Content</button>
+    <div id="contentDiv">Content will be loaded here</div>
+    <br><br><br>
+
+    
+    <div id="contextMenuDiv" style="width: 100px; height: 100px; background: lightgray;">Right-click me</div>
+    <div id="customMenu">Custom Context Menu</div> <br><br><br>
+
+    
+    <!-- <div id="resizeDiv">Resize the window</div>
+
+    
+    <button id="scrollTopButton">Scroll to Top</button>
+
+    
+    <a href="https://www.example.com" id="preventLink">Go to example.com</a>
+
+    
+    <div id="hoverDiv" style="width: 100px; height: 100px; background: lightgray;">Hover over me</div>
+    <div id="tooltip">Tooltip text</div> -->
+    <script src="main.js"></script>
+</body>
+
+</html>
