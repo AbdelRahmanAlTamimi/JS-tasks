@@ -131,33 +131,33 @@
     customMenu.style.display = "none";
   });
 
-//   // Task 18: Detect Window Resize
-//   window.addEventListener("resize", () => {
-//     console.log(`Width: ${window.innerWidth}, Height: ${window.innerHeight}`);
-//   });
+  // Task 18: Detect Window Resize
+  window.addEventListener("resize", () => {
+    console.log(`Width: ${window.innerWidth}, Height: ${window.innerHeight}`);
+  });
 
-//   // Task 19: Scroll to Top Button
-//   const scrollTopButton = document.getElementById("scrollTopButton");
-//   scrollTopButton.addEventListener("click", () => {
-//     window.scrollTo({ top: 0, behavior: "smooth" });
-//   });
+  // Task 19: Scroll to Top Button
+  const scrollTopButton = document.getElementById("scrollTopButton");
+  scrollTopButton.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 
-//   // Task 20: Prevent Default Link Behavior
-//   const preventLink = document.getElementById("preventLink");
-//   preventLink.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     alert("Default link behavior prevented");
-//   });
+  // Task 20: Prevent Default Link Behavior
+  const preventLink = document.getElementById("preventLink");
+  preventLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    alert("Default link behavior prevented");
+  });
 
-//   // Task 21: Hover Tooltip
-//   const hoverDiv = document.getElementById("hoverDiv");
-//   const tooltip = document.getElementById("tooltip");
-//   hoverDiv.addEventListener("mouseenter", (e) => {
-//     tooltip.style.display = "block";
-//     tooltip.style.left = `${e.pageX}px`;
-//     tooltip.style.top = `${e.pageY}px`;
-//   });
-//   hoverDiv.addEventListener("mouseleave", () => {
-//     tooltip.style.display = "none";
-//   });
+  // Task 21: Hover Tooltip
+  const hoverDiv = document.getElementById("hoverDiv");
+  const tooltip = document.getElementById("tooltip");
+  hoverDiv.addEventListener("mouseenter", (e) => {
+    tooltip.style.display = "block";
+    tooltip.style.left = `${e.pageX}px`;
+    tooltip.style.top = `${e.pageY}px`;
+  });
+  hoverDiv.addEventListener("mouseleave", () => {
+    tooltip.style.display = "none";
+  });
 
