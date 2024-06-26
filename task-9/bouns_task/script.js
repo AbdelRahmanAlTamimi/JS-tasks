@@ -30,29 +30,34 @@ postResponse.then(postData => {
           <p>${postData[i].body}</p>
           <p>Username: ${userData[i].username}</p>
           <p>Email: ${userData[i].email}</p>
-          <button id="toggleButton">Show Comment</button>
-          <div id="myComment" class="hidden">
+          <button id="toggleButton${i}">Show Comment</button>
+          <div id="myComment${i}" class="hidden">
           ${commentData[i].body}
           </div>
         </div>
         <br>`;
-      }
+      };
       document.querySelector("body").innerHTML = content;
-      const toggleButton = document.getElementById("toggleButton");
-      const myComment = document.getElementById("myComment");
+      for (let i = 0; i < 5; i++) {
+        const toggleButton = document.getElementById(`toggleButton${i}`);
+        const myComment = document.getElementById(`myComment${i}`);
 
-      toggleButton.addEventListener("click", () => {
-        if (myComment.classList.contains("hidden")) {
-          myComment.classList.remove("hidden");
-          myComment.classList.add("visible");
-        } else {
-          myComment.classList.remove("visible");
-          myComment.classList.add("hidden");
-        } 
-      });
+        toggleButton.addEventListener("click", () => {
+          if (myComment.classList.contains("hidden")) {
+            myComment.classList.remove("hidden");
+            myComment.classList.add("visible");
+          } else {
+            myComment.classList.remove("visible");
+            myComment.classList.add("hidden");
+          }
+        })
+      
+      
+      }
+    });
     })
   })
 
-})
+
 
   
