@@ -1,7 +1,5 @@
 const task1 = fetch("https://jsonplaceholder.typicode.com/posts");
-
 const myReq = task1.then((result) => {
-
     return result.json();
 });
 

@@ -14,7 +14,7 @@ function getData(apiLink) {
     
 }
 
-getData("https://jsonplaceholder.typicode.com/photos?albumId=1 ")
+getData("https://jsonplaceholder.typicode.com/photos?albumId=1")
     .then(data => {
         content = ""
         data.forEach(element => {

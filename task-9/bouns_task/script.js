@@ -1,4 +1,3 @@
-
 let post = fetch("https://jsonplaceholder.typicode.com/posts")
 let user = post.then((user) => {
   user = fetch("https://jsonplaceholder.typicode.com/users");
@@ -24,12 +23,13 @@ postResponse.then(postData => {
     commentResponse.then(commentData => {
       let content = "";
       for (let i = 0; i < 5; i++) {
+        const user = userData.find((user) => user.id === postData[i].userId);
         content += `
         <div class="post">
           <h2>Title: ${postData[i].title}</h2>
           <p>${postData[i].body}</p>
-          <p>Username: ${userData[i].username}</p>
-          <p>Email: ${userData[i].email}</p>
+          <p>Username: ${user.username}</p>
+          <p>Email: ${user.email}</p>
           <button id="toggleButton${i}">Show Comment</button>
           <div id="myComment${i}" class="hidden">
           ${commentData[i].body}
