@@ -40,7 +40,7 @@ async function createData() {
     try {
         let response = await fetch("http://localhost:3000/users");
         let users = await response.json();
-        data.id = users.length;
+        data.id = String(users.length);
       const myReq = await fetch("http://localhost:3000/users", {
         method: "POST",
         headers: {
@@ -50,7 +50,7 @@ async function createData() {
       });
       document.getElementById("add-user-form").reset();
       
-      console.log(users.length);
+    //   console.log(users.length);
       return myReq.json();
     }
     
@@ -81,7 +81,7 @@ async function updateData() {
     });
       console.log(data)
       let response = await myReq.json();
-      alert("The update succeeded")
+    //   alert("The update succeeded")
       document.getElementById("update-user-form").reset();
       return response;
   } catch (koko) {
@@ -89,7 +89,8 @@ async function updateData() {
   }
 }
 async function deleteData() {
-  let id = document.getElementById("deleteUserId").value;
+    let id = document.getElementById("deleteUserId").value;
+    String(id)
     try {
     const myReq = await fetch(`http://localhost:3000/users/${id}`, {
       method: "DELETE",
@@ -98,7 +99,7 @@ async function deleteData() {
       },
     });
         document.getElementById("delete-user-form").reset();
-        alert("The delete succeeded");
+        // alert("The delete succeeded");
     return myReq.json();
   } catch (koko) {
     console.error(`Error: ${koko}`);
